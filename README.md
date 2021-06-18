@@ -1,6 +1,7 @@
 # istream_block_iterator
 
-An implementation of a 'chunked' stream iterator with configurable chunk size `n`
+
+Although c++ is already imbued with the kitchen sink, it seems to lack a chunked character iterator for input streams.  Thus, I present an implementation of a 'chunked' stream iterator with configurable chunk size `n`
 
 # Example
 
