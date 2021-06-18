@@ -4,7 +4,7 @@ An implementation of a 'chunked' stream iterator with configurable chunk size `n
 
 # Example
 
-# given an input stream, split it into a vector of strings at most 3 in lenght
+#### given an input stream, split it into a vector of strings at most 3 in length
 ```
 constexpr auto N = 3;
 const auto example = "AAABBBCCC";
