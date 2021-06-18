@@ -24,6 +24,6 @@ RUN cmake -H. -B${BUILD} -DPROJECT_NAME=${PROJECT} -DCMAKE_BUILD_TYPE=${TYPE} -D
 RUN cmake --build ${BUILD} --verbose --config ${TYPE}
 ENV CTEST_OUTPUT_ON_FAILURE=1
 
-#RUN (cd ${BUILD} && ctest)
+RUN (cd ${BUILD} && ctest)
 ENV PROJECT_NAME=${PROJECT}
 CMD build/istream_test

@@ -36,7 +36,6 @@ public:
       for (auto n = 0; siter != send && n < block_size; ++siter, ++n) {
         sub.push_back(*siter);
       }
-      std::cout << sub << std::endl;
       value = std::move(sub);
     } else {
       in_stream = 0;
