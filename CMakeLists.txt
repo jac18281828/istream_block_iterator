@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
 
+if(NOT DEFINED PROJECT_NAME)
+  set(PROJECT_NAME istream_block)
+endif()
+
 project(${PROJECT_NAME} LANGUAGES CXX VERSION 1.0.0)
 
 add_compile_options(-std=c++20)
