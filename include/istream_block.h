@@ -7,7 +7,7 @@ namespace block_iter {
 
 template <class T, class charT = char, class traits = std::char_traits<charT>, class Distance = std::ptrdiff_t>
 class istream_block_iterator : public std::iterator<std::input_iterator_tag, T, Distance, const T*, const T&> {
-  using istream_iterator = std::istream_iterator<std::string::value_type>;
+  using istream_iterator = std::istream_iterator<charT>;
 
   std::basic_istream<charT, traits>* in_stream;
   T value;
